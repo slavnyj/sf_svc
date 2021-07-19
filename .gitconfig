@@ -1,0 +1,18 @@
+[user]
+	name = Alexandr Ivanov
+	email = ivanov.devops@gmail.com
+[remote "origin"]
+	url = https://github.com/slavnyj/sf_svc.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[core]
+	editor = \"C:\\Users\\iec_000\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	history = log --graph
